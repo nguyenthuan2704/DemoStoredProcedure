@@ -1,0 +1,14 @@
+﻿@model DemoStoredProcedure.Models.GetById_User_Result
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<p>Id : @Model.UserId</p>
+<p>Username : @Model.Username</p>
+<p>Password : @Model.Password</p>
+<p>FullName : @Model.FullName</p>
+
+<h3><a href="@Url.Action("Index","Home")">Back To Index</a></h3>
